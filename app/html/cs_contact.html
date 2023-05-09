@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header t1">
+		<div class="container">
+			<h1>고객센터</h1>
+			<a class="home btn right" href="main.html">메인</a>
+		</div>
+	</header>
+	<div class="tab_menu">
+		<ul class="tab_list">
+			<li>
+				<a href="cs_faq.html">FAQ</a>
+			</li>
+			<li class="on">
+				<a href="cs_contact.html">1:1 문의</a>
+			</li>
+			<li>
+				<a href="cs_call.html">전화 문의</a>
+			</li>
+		</ul>
+	</div>
+	<div class="depthWrap">
+		<ul class="depth_menu">
+			<li class="on">
+				<a href="cs_contact.html">문의하기</a>
+			</li>
+			<li>
+				<a href="cs_contact_history.html">문의내역</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="item_ct">
+  			<input class="input" type="text" placeholder="이메일">
+  		</div>
+  		<div class="item_ct">
+			<select class="select_box" required>
+				<option value hidden>상담유형 선택</option>
+			</select>
+		</div>
+		<div class="item_ct">
+			<textarea class="textarea" placeholder="내용을 입력해 주세요."></textarea>
+			<span class="txt_count">최대 500자</span>
+		</div>
+		<div class="item_ct">
+			<input class="chk_box" type="checkbox"><label><b>개인정보 수집 동의</b></label>
+			<ul class="info_list">
+				<li>- 수집하는 개인정보 : e-mail</li>
+				<li>- 문의접수 및 불만해결을 위해 일정기간 보관</li>
+				<li>- 상담 이력 보관 기간  : 1년</li>
+			</ul>
+		</div>
+	</div>
+	<div class="bottom_area">
+		<button class="btn dis" type="button">문의하기</button>
+	</div>
+</div>
+</body>
+</html>

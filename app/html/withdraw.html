@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header t1">
+		<div class="container">
+			<h1>출금하기</h1>
+			<a class="home btn right" href="main.html">메인</a>
+		</div>
+	</header>
+	<div class="container">
+   		<div class="item_section">
+   			<div class="ct_tt">
+  				<h2>출금 요청 금액</h2>
+  			</div>
+  			<div class="item_info clearfix">
+  				<h3 class="item fl">출금 수수료 (10%)</h3>
+  				<div class="info fr red">0 원</div>
+  			</div>
+  			<div class="input_btn">
+                <input class="input typeA" type="text" placeholder="금액을 입력해주세요 (최소 1천원)" onkeyup="inputNumberFormat(this)">
+                <span class="btn_del"></span>
+            </div>
+            <script src="../js/format.js"></script>
+            <div class="btn_list">
+                <ul class="clearfix">
+                    <li>5만원</li>
+                    <li>1만원</li>
+                    <li>5천원</li>
+                    <li>1천원</li>
+                </ul>
+            </div>
+            <p class="guide_txt">출금 가능 금액 : 150,000 P</p>
+		</div>
+  		<div class="item_section">
+  			<div class="ct_tt">
+  				<h2>출금 계좌 정보</h2>
+  				<div class="right">
+  					<a class="roundBtn" href="javascript:void(0);">계좌 변경</a>
+  				</div>
+  			</div>
+  			<div class="info_list">
+  				<dl class="clearfix">
+  					<dt>은행</dt>
+  					<dd>국민은행</dd>
+  					<dt>계좌번호</dt>
+  					<dd>123-0000-00000</dd>
+  					<dt>예금주</dt>
+  					<dd>홍길동</dd>
+  				</dl>
+  			</div>
+		</div>
+   	</div>
+   	<div class="bottom_area">
+  		<ul class="pay_info">
+  			<li>
+  				<span class="item">출금 요청 금액</span>
+  				<span class="price">0원</span>
+  			</li>
+  			<li>
+  				<span class="item">출금 수수료 (10%)</span>
+  				<span class="price">0원</span>
+  			</li>
+  			<li class="final_pay">
+  				<span class="item">최종 출금 금액</span>
+  				<span class="price red">0원</span>
+  			</li>
+  		</ul>
+		<button class="btn" type="button" disabled>출금하기</button>
+	</div>
+</div>
+</body>
+</html>

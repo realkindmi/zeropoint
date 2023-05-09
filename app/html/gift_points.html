@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header t1">
+		<div class="container">
+			<h1>포인트 선물</h1>
+			<a class="home btn right" href="main.html">메인</a>
+		</div>
+	</header>
+	<div class="tab_menu">
+		<ul class="tab_list">
+			<li class="on">
+				<a href="gift_points.html">선물하기</a>
+			</li>
+			<li>
+				<a href="gift_sent.html">보낸선물</a>
+			</li>
+			<li>
+				<a href="gift_received.html">받은선물</a>
+			</li>
+		</ul>
+	</div>
+  	<div class="container">
+  		<div class="item_section">
+  			<div class="ct_tt">
+  				<h2>선물 받으실 분</h2>
+  				<div class="right">
+  					<a class="roundBtn" href="javascript:void(0);">주소록</a>
+  				</div>
+  			</div>
+  			<div class="item_ct">
+  				<input class="input" type="text" placeholder="성함">
+  			</div>
+  			<div class="item_ct">
+  				<input class="input" type="tel" placeholder="휴대폰 번호 ('-'없이)">
+  			</div>
+		</div>
+		<div class="item_section">
+  			<div class="ct_tt">
+  				<h2>선물하실 포인트</h2>
+  			</div>
+            <script src="../js/format.js"></script>
+  			<div class="item_ct">
+  				<div class="input_btn">
+					<input class="input typeA" type="text" placeholder="금액을 입력해주세요 (최소 1천원)" onkeyup="inputNumberFormat(this)">
+					<span class="btn_del"></span>
+				</div>
+				<script src="../js/format.js"></script>
+  				<p class="info_txt red">선물 가능 포인트 : 500,000 p</p>
+  			</div>
+		</div>
+		<div class="item_section">
+  			<div class="ct_tt">
+  				<h2>메세지</h2>
+  			</div>
+  			<div class="item_ct">
+				<textarea class="textarea ss" placeholder="좋은 하루 되세요 :)"></textarea>
+  			</div>
+		</div>
+	</div>
+   	<div class="bottom_area">
+   		<button class="btn" type="button" disabled>선물하기</button>
+	</div>
+</div>
+</body>
+</html>

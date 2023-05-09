@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header">
+		<div class="container">
+			<h1 class="logo">ZeroPay 선불포인트</h1>
+			<a class="home btn right" href="main.html">메인</a>
+		</div>
+	</header>
+	<div class="container">
+		<div class="point_box">
+			<div class="point_info">
+				<a class="btn_payment" href="javascript:void(0);">결제코드</a>
+				<p class="point">200,000<em class="unit">P</em></p>
+			</div>
+			<ul class="point_status">
+				<li>
+					<span>유료</span>
+					<span>150,000P</span>
+				</li>
+				<li>
+					<span>무료</span>
+					<span>150,000P</span>
+				</li>
+				<li>
+					<span>소멸예정</span>
+					<span>150,000P</span>
+				</li>
+			</ul>
+		</div>
+   		<div class="item_section">
+  			<div class="ct_tt">
+  				<h2>휴대폰 충전하기</h2>
+  			</div>
+  			<div class="item_info clearfix">
+  				<h3 class="item fl">충전 금액</h3>
+  				<div class="info fr red">충전 수수료 : 0 원</div>
+  			</div>
+  			<div class="input_btn">
+                <input class="input typeA" type="text" placeholder="금액을 입력해주세요 (최소 1천원)" onkeyup="inputNumberFormat(this)">
+                <span class="btn_del"></span>
+            </div>
+            <script src="../js/format.js"></script>
+            <div class="btn_list">
+                <ul class="clearfix">
+                    <li>5만원</li>
+                    <li>1만원</li>
+                    <li>5천원</li>
+                    <li>1천원</li>
+                </ul>
+            </div>
+		</div>
+   	</div>
+   	<div class="bottom_area">
+  		<ul class="pay_info">
+  			<li>
+  				<span class="item">충전 금액</span>
+  				<span class="price">40,000원</span>
+  			</li>
+  			<li>
+  				<span class="item">충전 수수료</span>
+  				<span class="price">200원</span>
+  			</li>
+  			<li class="final_pay">
+  				<span class="item">최종 결제 금액</span>
+  				<span class="price red">40,200원</span>
+  			</li>
+  		</ul>
+		<button class="btn" type="button" disabled>충전하기</button>
+	</div>
+</div>
+<!--S: popup-->
+<div class="popWrap">
+	<div class="pop_box">
+		<div class="pop_ct">
+			<h2 class="pop_tt">충전 실패</h2>
+			<p class="pop_txt">제로포인트 충전이<br><em class="red">실패되었습니다.</em></p>
+			<p class="pop_txt">다시 결재해 주세요.</p>
+		</div>
+		<div class="pop_button">
+			<a class="btn" href="javascript:void(0);">확인</a>
+		</div>
+	</div>
+</div>
+<!--E: popup-->
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header">
+		<div class="container">
+			<h1 class="logo">제로페이 멤버십 포인트</h1>
+			<a class="alert btn right" href="reminder_list.html">알림</a>
+		</div>
+	</header>
+	<div class="container">
+		<div class="point_box">
+			<div class="point_info">
+				<a class="btn_payment" href="javascript:void(0);">결제코드</a>
+				<p class="point">200,000<em class="unit">P</em></p>
+			</div>
+			<ul class="point_status">
+				<li>
+					<span>유료</span>
+					<span>150,000P</span>
+				</li>
+				<li>
+					<span>무료</span>
+					<span>150,000P</span>
+				</li>
+				<li>
+					<span>소멸예정</span>
+					<span>150,000P</span>
+				</li>
+			</ul>
+		</div>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<div class="event_banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="javascript:void(0);">
+						<img src="../images/main_banner.png">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background:#ffcb2d;">
+					<a href="javascript:void(0);"></a>
+				</div>
+				<div class="swiper-slide" style="background:#fab2b4;">
+					<a href="javascript:void(0);"></a>
+				</div>
+				<div class="swiper-slide" style="background:#b8d6f3;">
+					<a href="javascript:void(0);"></a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+   	<div class="main_menu">
+   		<ul class="clearfix">
+   			<li data-tab="tab-1" class="on">
+   				<a class="btn_charge" href="javascript:void(0);">충전하기</a>
+   			</li>
+   			<li>
+   				<a class="btn_payment" href="./point_pay.html">제로페이 결제</a>
+   			</li>
+   			<li>
+   				<a class="btn_sp" href="./shopping_giftcard.html">쇼핑하기</a>
+   			</li>
+   			<li data-tab="tab-2">
+   				<a class="btn_more" href="javascript:void(0);">더보기</a>
+   			</li>
+   		</ul>
+   	</div>
+   	<div class="sub_wrap">
+   		<div id="tab-1" class="tab_content on">
+   			<div class="container">
+				<h2 class="menu_tt">충전 수단 선택</h2>
+			</div>
+			<ul class="menu_charge clearfix">
+				<li>
+					<a class="btn_cellphone" href="javascript:void(0);">폰빌</a>
+				</li>
+				<li>
+					<a class="btn_card" href="javascript:void(0);">신용카드</a>
+				</li>
+				<li>
+					<a class="btn_account" href="javascript:void(0);">계좌이체</a>
+				</li>
+				<li>
+					<a class="btn_toss" href="javascript:void(0);">toss</a>
+				</li>
+				<li>
+					<a class="btn_tpay" href="javascript:void(0);">교통페이</a>
+				</li>
+				<li>
+					<a class="btn_dcash" href="javascript:void(0);">다모음캐시</a>
+				</li>
+				<li>
+					<a class="btn_fc" href="javascript:void(0);">무료충전</a>
+				</li>
+			</ul>
+   		</div>
+   		<div id="tab-2" class="tab_content">
+   			<div class="account_area">
+				<p>Noname@naver.com</p>
+			</div>
+			<ul class="menu_more clearfix">
+				<li>
+					<a class="btn_withdraw" href="javascript:void(0);">출금하기</a>
+				</li>
+				<li>
+					<a class="btn_history" href="javascript:void(0);">이용내역</a>
+				</li>
+				<li>
+					<a class="btn_gift" href="javascript:void(0);">선물하기</a>
+				</li>
+				<li>
+					<a class="btn_cs" href="javascript:void(0);">고객센터</a>
+				</li>
+				<li>
+					<a class="btn_notice" href="javascript:void(0);">공지사항</a>
+				</li>
+				<li>
+					<a class="btn_terms" href="javascript:void(0);">약관동의</a>
+				</li>
+				<li>
+					<a class="btn_guide" href="javascript:void(0);">이용가이드</a>
+				</li>
+				<li>
+					<a class="btn_pw" href="javascript:void(0);">결제비밀번호 변경</a>
+				</li>
+				<li>
+					<a class="btn_conv" href="javascript:void(0);">전환하기</a>
+				</li>
+			</ul>
+   		</div>
+   	</div>
+</div>
+<!--S: popup-->
+<div class="popWrap event" style="display:none;">
+	<div class="event_pop">
+		<div class="event_ct">
+			<img src="../images/main_b_banner.svg" />
+			<a class="btn_link" href="#">계좌 등록하러 가기</a>
+		</div>
+		<a class="btn_close" href="javascript:void(0);">닫기</a>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$('.popWrap.event .btn_close').click(function(){
+		$('.popWrap.event').fadeOut();
+		$('.event_pop').css('bottom', '-100%');
+	})
+});
+</script>
+<!--E: popup-->
+<script src="../js/swiper.min.js"></script>
+<script>    
+	var swiper = new Swiper('.event_banner', {
+		pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+		spaceBetween:15,
+    	slidesPerView:'auto',
+    	loop:true
+	});
+</script>
+</body>
+</html>

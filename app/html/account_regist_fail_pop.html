@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header t1">
+		<div class="container">
+			<h1>계좌 등록</h1>
+			<a class="home btn right" href="main.html">메인</a>
+		</div>
+	</header>
+  	<div class="container">
+  		<div class="ct_guide">
+			<p>등록할 계좌 정보를 입력해 주세요.</p>
+		</div>
+  		<div class="item_section">
+  			<div class="ct_tt">
+  				<h2>계좌 정보 입력</h2> 
+  			</div>
+  			<div class="item_ct">
+  				<select class="select_box" required disabled>
+  					<option value hidden>은행명</option>
+  					<option selected>국민은행</option>
+  				</select>
+  			</div>
+  			<div class="item_ct">
+  				<input class="input" type="number" placeholder="예금주" value="홍길동" disabled>
+  			</div>
+  			<div class="item_ct">
+  				<input class="input" type="number" placeholder="계좌번호" value="123456-78-123456">
+  			</div>
+		</div>
+	</div>
+   	<div class="bottom_area">
+   		<button class="btn" type="button">확인</button>
+	</div>
+</div>
+<!--S: popup-->
+<div class="popWrap">
+	<div class="pop_box">
+		<div class="pop_ct">
+			<h2 class="pop_tt">계좌 인증 실패</h2>
+			<p class="pop_txt">계좌 등록이 <em class="red">실패하였습니다.</em></p>
+			<p class="pop_txt">계좌 정보 확인 후 재시도해 주세요.</p>
+		</div>
+		<div class="pop_button">
+			<a class="btn" href="javascript:void(0);">확인</a>
+		</div>
+	</div>
+</div>
+<!--E: popup-->
+</body>
+</html>

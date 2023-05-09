@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+   	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header class="header t1">
+		<div class="container">
+			<h1>포인트 결제</h1>
+			<a class="home btn right" href="main.html">메인</a>
+		</div>
+	</header>
+	<div class="top_status">
+		<div class="container clearfix">
+			<span class="avb fl">사용 가능 포인트</span>
+			<span class="point fr">20,000P</span>
+		</div>
+	</div>
+  	<div class="content">
+  		<div class="toggle_code">
+  			<div class="toggle_switch">
+                <label class="switch_btn">
+                    <input type="checkbox" data-toggle='btn-toggle'>
+                    <span class="slider round"></span>
+                    <div class="icon qr"></div>
+                	<div class="icon bc"></div>
+                </label>
+            </div>
+  		</div>
+  		<div class="code_wrap">
+  			<div class="code_inner dim"><!--dim 제거시 충전버튼 해제-->
+				<div class="code_area active">
+					<img class="qr" src="../images/sample_qr.png" alt="" />
+				</div>
+				<div class="code_area">
+					<img class="bc" src="../images/sample_barcode.png" alt="" />
+				</div>
+				<a class="btn_charge" href="javascript:void(0);">포인트 충전하기</a>
+			</div>
+  		</div>
+  		<div class="pp_info btnWrap">
+  			<a class="btn_store" href="point_pay_store.html">사용 가능 매장</a>
+  			<a class="btn_online" href="javascript:void(0);">온라인 결제</a>
+  		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	var target_area = $('.code_area');
+	$('[data-toggle]').change(function(){
+		target_area.toggleClass('active');
+	});
+});
+</script>
+</body>
+</html>
