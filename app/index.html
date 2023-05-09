@@ -11,29 +11,33 @@
 	a {display:inline-block; text-decoration:none; color:#439aef;}
 	table {width:100%; margin-bottom:40px; border-collapse:collapse; border-spacing:0; border-top:2px solid #888;}
 	table tr:hover {background:#ecf5fd;}
-	caption {padding:10px 15px; margin-bottom:5px; font-size:14px; font-weight:bold; text-align:left; background:#eee;}
+	caption {padding:10px 15px; margin-bottom:5px; font-size:14px; font-weight:bold; text-align:left; background:#EDEDED;}
 	th, td {padding:8px 20px; text-align:left; border-bottom:1px solid #DDD;}
 	thead th {background:#F7F7F7;}
 	tbody th, tbody td {font-size:12px;}
 	thead th:first-child, tbody td:first-child {text-align:center;}
 	
 	#wrap {position:relative; width:100%; min-width:1024px; height:100%; min-height:100%;}
-	#header {position:fixed; left:0; right:0; top:0; width:100%; min-width:1024px; height:80px; z-index:100; box-shadow:0 1px 0px 0px rgba(26, 26, 26, 0.1); background:#3B4094;}
+	
+	#header {position:fixed; left:0; right:0; top:0; width:100%; min-width:1024px; height:80px; z-index:100; box-shadow:0 2px 5px 1px rgba(26, 26, 26, 0.2); background:#3B4094;}
 	#header .name {position:absolute; left:30px; top:50%; margin-top:-12px; line-height:24px; }
 	#header .name .logo {display:inline-block; width:180px; height:auto; margin-right:8px; background:url("./title_logo_w.svg") no-repeat; background-size:contain; text-indent:-9999px;}
 	#header .name span {font-size:20px; font-weight:bold; vertical-align:top; color:#fff;}
 	
-	.frame_area {position:fixed; top:120px; left:20px; -webkit-backface-visibility:visible;}
+	.frame_area {position:fixed; top:110px; left:30px; -webkit-backface-visibility:visible;}
 	.frame_wrap {position:relative; width:385px; height:798px; background: url(./mobile_img.svg) no-repeat 0; background-size:100%; overflow:hidden; -webkit-backface-visibility:visible;}
 	.frame_wrap iframe {position:absolute; top:5px; left:13px; border-radius:36px;}
 	
-	.menu {width:calc(100% - 460px); margin:120px 30px 0 430px;}
+	.menu {width:calc(100% - 475px); margin:120px 30px 0 445px;}
 
 </style>
 <body>
 <div id="wrap">
 	<div id="header">
-		<div class="name"><h1 class="logo">제로페이 선불포인트</h1><span>화면 목록</span></div>
+		<div class="name">
+			<h1 class="logo">제로페이 선불포인트</h1>
+			<span>화면 목록</span>
+		</div>
 	</div>
 	
 	<div class="frame_area">
@@ -60,7 +64,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td></td>
+					<td>0</td>
 					<td>에러페이지</td>
 					<td></td>
 					<td><a href="html/page_error.html" target="iframe_a">page_error.html</a></td>
@@ -88,19 +92,19 @@
 					<td>1</td>
 					<td>메인</td>
 					<td></td>
-					<td><a href="html/main.html" target="iframe_a">html/main.html.html</a></td>
+					<td><a href="html/main.html" target="iframe_a">main.html.html</a></td>
 				</tr>
 				<tr>
 					<td>2</td>
 					<td>메인 하단 배너</td>
 					<td></td>
-					<td><a href="html/main_pop_01.html" target="iframe_a">html/main_pop_01.html</a></td>
+					<td><a href="html/main_pop_01.html" target="iframe_a">main_pop_01.html</a></td>
 				</tr>
 				<tr>
 					<td>3</td>
 					<td></td>
 					<td>알림</td>
-					<td><a href="html/reminder_list.html" target="iframe_a">html/reminder_list.html</a></td>
+					<td><a href="html/reminder_list.html" target="iframe_a">reminder_list.html</a></td>
 				</tr>
 			</tbody>
 		</table>
