@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200">
+    <defs>
+        <clipPath id="h25orikaea">
+            <path data-name="사각형 458" transform="translate(0 487)" style="fill:#fff;stroke:#707070" d="M0 0h27v57H0z"/>
+        </clipPath>
+    </defs>
+    <path data-name="사각형 454" d="M20 0h320a20 20 0 0 1 20 20v180H0V20A20 20 0 0 1 20 0z" style="fill:#e6f8ff"/>
+    <text data-name="계좌 등록하기" transform="translate(180 45)" style="font-family:S-CoreDream-7ExtraBold,'S-Core Dream \37 ';font-weight:800;font-size:18px;fill:#111"><tspan x="-54.486" y="0">계좌 등록하기</tspan></text>
+    <text data-name="계좌 등록하면 충전한도가 50만원에서 200만원으로 증가됩니다." transform="translate(180 82)" style="font-size:15px;font-family:S-CoreDream-4Regular,'S-Core Dream \34 ';fill:#111"><tspan x="-83.565" y="0">계좌 등록하면 </tspan><tspan y="0" style="font-family:S-CoreDream-7ExtraBold,'S-Core Dream \37 ';font-weight:800">충전한도</tspan><tspan y="0">가</tspan><tspan x="-123.607" y="22">50만원에서 </tspan><tspan y="22" style="font-family:S-CoreDream-7ExtraBold,'S-Core Dream \37 ';font-weight:800">200만원으로</tspan><tspan y="22" xml:space="preserve"> 증가됩니다.</tspan></text>
+    <g data-name="그룹 1095">
+        <path data-name="다각형 1" d="M9.5 0 19 10H0z" transform="translate(289 21)" style="fill:#97b2d5"/>
+        <path data-name="사각형 455" transform="translate(295 28)" style="fill:#97b2d5" d="M0 0h7v9H0z"/>
+        <path data-name="사각형 456" transform="translate(295 39)" style="fill:#97b2d5" d="M0 0h7v3H0z"/>
+        <path data-name="사각형 457" transform="translate(295 44)" style="fill:#97b2d5" d="M0 0h7v2H0z"/>
+    </g>
+    <g data-name="그룹 1100">
+        <path data-name="다각형 1" d="M17.5 0 35 19H0z" transform="translate(321 96)" style="fill:#c0d5f1"/>
+        <path data-name="사각형 455" transform="translate(332 109)" style="fill:#c0d5f1" d="M0 0h13v17H0z"/>
+        <path data-name="사각형 456" transform="translate(332 130)" style="fill:#c0d5f1" d="M0 0h13v5H0z"/>
+        <path data-name="사각형 457" transform="translate(332 139)" style="fill:#c0d5f1" d="M0 0h13v4H0z"/>
+    </g>
+    <g data-name="그룹 1101">
+        <path data-name="다각형 1" d="M16.5 0 33 18H0z" transform="translate(49 11)" style="fill:#c0d5f1"/>
+        <path data-name="사각형 455" transform="translate(60 23)" style="fill:#c0d5f1" d="M0 0h12v17H0z"/>
+        <path data-name="사각형 456" transform="translate(60 43)" style="fill:#c0d5f1" d="M0 0h12v5H0z"/>
+        <path data-name="사각형 457" transform="translate(60 52)" style="fill:#c0d5f1" d="M0 0h12v4H0z"/>
+    </g>
+    <g data-name="그룹 1096" transform="translate(-14 -433)">
+        <circle data-name="타원 90" cx="16.5" cy="16.5" r="16.5" transform="translate(296 481)" style="fill:#fdc23a"/>
+        <circle data-name="타원 91" cx="12.5" cy="12.5" r="12.5" transform="translate(300 485)" style="fill:#fff0cf"/>
+        <path data-name="패스 845" d="M-.4-11.088h2.638l1.129 4.935H4.5l.859-4.935h3.019L7.153-6.153h1.161v1.02H6.9L5.642-.088H2.763L1.57-5.133H.25L-.927-.088h-2.9l-1.252-5.045h-1.543v-1.02h1.288l-1.225-4.935h3.022l.859 4.935h1.129zm4.006 5.955L4-3.382l.3-1.751zm-2.275-1.02L.9-7.959.488-6.153zM-2.5-5.133l.3 1.751.414-1.751z" transform="translate(311.622 503.088)" style="fill:#b07f39"/>
+    </g>
+    <g data-name="마스크 그룹 1" transform="translate(0 -419)" style="clip-path:url(#h25orikaea)">
+        <g data-name="그룹 1102">
+            <g data-name="그룹 1099">
+                <path data-name="다각형 1" d="m8 0 8 8H0z" transform="translate(3 489)" style="fill:#97b2d5"/>
+                <path data-name="사각형 455" transform="translate(8 495)" style="fill:#97b2d5" d="M0 0h6v7H0z"/>
+                <path data-name="사각형 456" transform="translate(8 504)" style="fill:#97b2d5" d="M0 0h6v2H0z"/>
+                <path data-name="사각형 457" transform="translate(8 508)" style="fill:#97b2d5" d="M0 0h6v2H0z"/>
+            </g>
+            <g data-name="그룹 1097" transform="translate(-2.886 512.254)">
+                <circle data-name="타원 90" cx="14" cy="14" r="14" transform="translate(-.114 -.253)" style="fill:#fdc23a"/>
+                <circle data-name="타원 91" cx="10" cy="10" r="10" transform="translate(3.886 3.747)" style="fill:#fff0cf"/>
+                <path data-name="패스 845" d="M-1.472-11.088H.714L1.649-7h.935l.716-4.088h2.5L4.783-7h.961v.845H4.573L3.532-1.98H1.148L.161-6.158H-.932l-.975 4.178H-4.3l-1.04-4.177h-1.282V-7h1.067l-1.014-4.086h2.5L-3.356-7h.935zm3.319 4.93.329 1.449.25-1.449zM-.037-7l-.355-1.5L-.735-7zm-3.174.845.25 1.449.342-1.449z" transform="translate(14.074 20.29)" style="fill:#b07f39"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="알림함_아이콘_알림" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_434" data-name="사각형 434" class="cls-1" d="M0 0h11.316v13.087H0z"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#48a192}
+        </style>
+    </defs>
+    <path id="사각형_433" data-name="사각형 433" style="fill:none" d="M0 0h16v16H0z"/>
+    <g id="그룹_1051" data-name="그룹 1051" transform="translate(1.426 1.336)">
+        <g id="그룹_1050" data-name="그룹 1050" style="clip-path:url(#clip-path)">
+            <path id="패스_840" data-name="패스 840" class="cls-1" d="M7.433 2.232A1.19 1.19 0 0 1 6.844 1.2a1.186 1.186 0 1 0-2.372 0 1.188 1.188 0 0 1-.589 1.03C1.242 3.767 2.759 8.861 0 9.761v.99h11.316v-.99c-2.759-.9-1.242-5.994-3.883-7.529M5.658.566a.566.566 0 1 1-.566.566.566.566 0 0 1 .566-.566m1.8 10.718a1.844 1.844 0 0 1-1.786 1.8 1.874 1.874 0 0 1-1.821-1.8z"/>
+        </g>
+    </g>
+</svg>

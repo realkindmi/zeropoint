@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="68.97" viewBox="0 0 67 68.97">
+    <defs>
+        <radialGradient id="0poeouykea" cx=".422" cy=".228" r=".491" gradientTransform="rotate(-117.13 .422 .228)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffdb95"/>
+            <stop offset="1" stop-color="#f4b721"/>
+        </radialGradient>
+    </defs>
+    <g data-name="그룹 1338">
+        <g data-name="타원 121" transform="translate(0 1.97)" style="stroke:#66422a;stroke-width:2.5px;fill:url(#0poeouykea)">
+            <circle cx="33.5" cy="33.5" r="33.5" style="stroke:none"/>
+            <circle cx="33.5" cy="33.5" r="32.25" style="fill:none"/>
+        </g>
+        <path data-name="패스 869" d="M647.66 4901.5a15.087 15.087 0 0 0 8.114-.131c4.178-1.33 6.686-5.509 6.686-5.509l.838 2.078a13.087 13.087 0 0 1-6.622 5.194 14.546 14.546 0 0 1-8.753.163z" transform="rotate(9 31197.847 -1576.03)" style="fill:#66422a"/>
+        <path data-name="패스 876" d="M0 2.392a15.087 15.087 0 0 1 8.114.131c4.178 1.33 6.686 5.509 6.686 5.509l.838-2.078A13.084 13.084 0 0 0 9.016.761 14.546 14.546 0 0 0 .263.6z" transform="rotate(171 27.13 24.78)" style="fill:#66422a"/>
+        <path data-name="패스 874" d="M.013 5.529s2.255.6 8.282-.852 7.637-3.635 7.637-3.635l1.227.982s-1.587 2.7-8 4.418S.22 7.411.22 7.411z" transform="rotate(-12.04 142.298 -12.093)" style="fill:#66422a"/>
+        <path data-name="패스 877" d="M0 2.044s2.255-.6 8.282.852 7.637 3.634 7.637 3.634l1.227-.982s-1.587-2.7-8-4.418S.207.163.207.163z" transform="rotate(-167.96 32.258 15.18)" style="fill:#66422a"/>
+        <path data-name="사각형 556" transform="translate(26 54.97)" style="fill:#66422a" d="M0 0h16v2H0z"/>
+    </g>
+    <g data-name="그룹 1339">
+        <path data-name="패스 878" d="M699.756 4901.96s-5.937 10.5-6.1 14.64 2.472 6.435 6.1 6.541 6.3-2.167 6.3-6.541-6.3-14.64-6.3-14.64z" transform="translate(-640.517 -4899.99)" style="fill:#7ed0fa;stroke:#2d88b8;stroke-width:2px"/>
+        <path data-name="패스 879" d="M1.487 0c.786 0 1.358 1.484 1.358 2.532s-.637 1.9-1.423 1.9S0 3.579 0 2.532.7 0 1.487 0z" transform="rotate(10.02 -19.176 332.405)" style="fill:#fff;opacity:.8"/>
+    </g>
+</svg>

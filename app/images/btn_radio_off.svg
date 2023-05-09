@@ -1,0 +1,18 @@
+<svg id="btn_radio_n" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+    <defs>
+        <style>
+            .cls-3{fill:none}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="그룹_929" data-name="그룹 929" transform="translate(-278 -90)">
+        <g id="타원_109" data-name="타원 109" transform="translate(283 95)" style="stroke:#c8ccd1;fill:#fff">
+            <circle class="cls-4" cx="8" cy="8" r="8"/>
+            <circle class="cls-3" cx="8" cy="8" r="7.5"/>
+        </g>
+        <g id="타원_110" data-name="타원 110" transform="translate(286 98)" style="fill:#f7f7f7;stroke:#c8ccd1">
+            <circle class="cls-4" cx="5" cy="5" r="5"/>
+            <circle class="cls-3" cx="5" cy="5" r="4.5"/>
+        </g>
+    </g>
+    <path id="사각형_395" data-name="사각형 395" class="cls-3" d="M0 0h26v26H0z"/>
+</svg>

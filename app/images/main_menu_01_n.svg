@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <style>
+            .cls-1{fill:#a7acb3}
+        </style>
+    </defs>
+    <g id="top_menu_01_n" transform="translate(0 -575)">
+        <g id="그룹_26" data-name="그룹 26" transform="translate(2.228 577.125)">
+            <g id="그룹_20" data-name="그룹 20">
+                <path id="패스_1" data-name="패스 1" class="cls-1" d="M180.758 386.155a14.822 14.822 0 1 1 14.822-14.822 14.839 14.839 0 0 1-14.822 14.822zm0-28.081a13.258 13.258 0 1 0 13.258 13.258 13.273 13.273 0 0 0-13.258-13.257z" transform="translate(-165.936 -356.511)"/>
+            </g>
+            <g id="그룹_25" data-name="그룹 25" transform="translate(11.561 8.868)">
+                <g id="그룹_24" data-name="그룹 24">
+                    <path id="패스_5" data-name="패스 5" class="cls-1" d="M196.294 380.273h4.549a5.755 5.755 0 0 1 1.869.273 3.629 3.629 0 0 1 1.313.758 3.038 3.038 0 0 1 .776 1.155 4.026 4.026 0 0 1 .256 1.446v.37a3.859 3.859 0 0 1-.273 1.454 3.409 3.409 0 0 1-.8 1.19 3.829 3.829 0 0 1-1.314.811 5.1 5.1 0 0 1-1.825.3h-2.8v4.954h-1.746zm1.746 1.516v4.725h2.5q2.75 0 2.75-2.274v-.317a1.925 1.925 0 0 0-.661-1.613 3.006 3.006 0 0 0-1.895-.52z" transform="translate(-196.294 -380.273)"/>
+                </g>
+            </g>
+        </g>
+        <path id="사각형_26" data-name="사각형 26" transform="translate(0 575)" style="fill:none" d="M0 0h34v34H0z"/>
+    </g>
+</svg>

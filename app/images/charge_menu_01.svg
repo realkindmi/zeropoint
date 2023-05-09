@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="charge_menu_01" transform="translate(-28 -386.5)">
+        <g id="그룹_728" data-name="그룹 728" transform="translate(28 96.5)">
+            <path id="사각형_309" data-name="사각형 309" transform="translate(0 290)" style="fill:none" d="M0 0h34v34H0z"/>
+        </g>
+        <g id="그룹_891" data-name="그룹 891" transform="translate(12.182 -155.404)">
+            <rect id="사각형_329" data-name="사각형 329" width="17.635" height="29.807" rx="3" transform="translate(24 544)" style="fill:#697f9c"/>
+            <g id="그룹_888" data-name="그룹 888" transform="translate(26.522 546.773)">
+                <g id="그룹_884" data-name="그룹 884" transform="translate(4.148 .241)">
+                    <path id="패스_801" data-name="패스 801" class="cls-3" d="M78.182 918.474h-2.837a.556.556 0 1 1 0-1.1h2.837a.556.556 0 1 1 0 1.1z" transform="translate(-74.69 -917.379)"/>
+                </g>
+                <circle id="타원_101" data-name="타원 101" class="cls-3" cx=".603" cy=".603" transform="translate(9.187 .131)" r=".603"/>
+                <g id="그룹_885" data-name="그룹 885" transform="translate(0 4.573)">
+                    <path id="패스_802" data-name="패스 802" class="cls-3" d="M73.516 941.839a.566.566 0 0 1-.484-.271l-7.162-11.725a.566.566 0 0 1 .967-.591L74 940.978a.566.566 0 0 1-.483.861z" transform="translate(-65.787 -928.981)"/>
+                </g>
+                <g id="그룹_886" data-name="그룹 886" transform="translate(6.147 10.418)">
+                    <path id="패스_803" data-name="패스 803" class="cls-3" d="M85.932 949.133a.566.566 0 0 1-.485-.272l-.58-.956a.566.566 0 1 1 .968-.588l.58.956a.566.566 0 0 1-.483.86z" transform="translate(-84.785 -947.045)"/>
+                </g>
+                <g id="그룹_887" data-name="그룹 887" transform="translate(2.599 4.573)">
+                    <path id="패스_804" data-name="패스 804" class="cls-3" d="M76.857 934.181a.566.566 0 0 1-.485-.272l-2.472-4.067a.566.566 0 1 1 .968-.588l2.468 4.067a.566.566 0 0 1-.483.86z" transform="translate(-73.821 -928.982)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

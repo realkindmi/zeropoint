@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <style>
+            .cls-1{fill:#a7acb3}
+        </style>
+    </defs>
+    <g id="top_menu_04_n" transform="translate(-300 -575)">
+        <g id="그룹_64" data-name="그룹 64" transform="translate(304.793 589.576)">
+            <circle id="타원_1" data-name="타원 1" class="cls-1" cx="2.437" cy="2.437" r="2.437"/>
+            <circle id="타원_2" data-name="타원 2" class="cls-1" cx="2.437" cy="2.437" r="2.437" transform="translate(9.68)"/>
+            <circle id="타원_3" data-name="타원 3" class="cls-1" cx="2.437" cy="2.437" r="2.437" transform="translate(19.36)"/>
+        </g>
+        <path id="사각형_29" data-name="사각형 29" transform="translate(300 575)" style="fill:none" d="M0 0h34v34H0z"/>
+    </g>
+</svg>
