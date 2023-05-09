@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=yes, width=device-width">
+	<title></title>
+</head>
+<style>
+	* {border:none; margin:0; padding:0; box-sizing:border-box;}
+	body {height:100%; font-size:13px;}
+	a {display:inline-block; text-decoration:none; color:#439aef;}
+	table {width:100%; margin-bottom:40px; border-collapse:collapse; border-spacing:0; border-top:2px solid #888;}
+	table tr:hover {background:#ecf5fd;}
+	caption {padding:10px 15px; margin-bottom:5px; font-size:14px; font-weight:bold; text-align:left; background:#eee;}
+	th, td {padding:8px 20px; text-align:left; border-bottom:1px solid #DDD;}
+	thead th {background:#F7F7F7;}
+	tbody th, tbody td {font-size:12px;}
+	tbody td:first-child {text-align:center;}
+	
+	#wrap {position:relative; width:100%; min-width:1024px; height:100%; min-height:100%;}
+	#header {position:fixed; left:0; right:0; top:0; width:100%; min-width:1024px; height:80px; z-index:100; box-shadow:0 1px 0px 0px rgba(26, 26, 26, 0.1); background:#3B4094;}
+	#header .name {position:absolute; left:30px; top:50%; margin-top:-12px; line-height:24px; }
+	#header .name .logo {display:inline-block; width:180px; height:auto; margin-right:8px; background:url("./title_logo_w.svg") no-repeat; background-size:contain; text-indent:-9999px;}
+	#header .name span {font-size:20px; font-weight:bold; vertical-align:top; color:#fff;}
+	
+	.frame_area {position:fixed; top:120px; left:20px; -webkit-backface-visibility:visible;}
+	.frame_wrap {position:relative; width:385px; height:798px; background: url(./mobile_img.svg) no-repeat 0; background-size:100%; overflow:hidden; -webkit-backface-visibility:visible;}
+	.frame_wrap iframe {position:absolute; top:5px; left:13px; border-radius:36px;}
+	
+	.menu {width:calc(100% - 460px); margin:120px 30px 0 430px;}
+
+</style>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="name"><h1 class="logo">제로페이 선불포인트</h1><span>화면 목록</span></div>
+	</div>
+	
+	<div class="frame_area">
+		<div class="frame_wrap">
+			<iframe src="html/main.html" width="360" height="787" name="iframe_a" frameborder="0" scrolling="auto"></iframe>
+		</div>
+	</div>
+
+	<div class="menu">
+		<!-- S.menu 00 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>공통</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td>에러페이지</td>
+					<td></td>
+					<td><a href="html/page_error.html" target="iframe_a">page_error.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 00 -->
+		<!-- S.menu 01 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>메인</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>1</th>
+					<td>메인</td>
+					<td></td>
+					<td><a href="html/main.html" target="iframe_a">html/main.html.html</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>메인 하단 배너</td>
+					<td></td>
+					<td><a href="html/main_pop_01.html" target="iframe_a">html/main_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td></td>
+					<td>알림</td>
+					<td><a href="html/reminder_list.html" target="iframe_a">html/reminder_list.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 01 -->
+		<!-- S.menu 02 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>회원가입</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>4</td>
+					<td>가입 약관</td>
+					<td></td>
+					<td><a href="html/join_terms.html" target="iframe_a">join_terms.html</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td></td>
+					<td>결제 비밀번호 설정</td>
+					<td><a href="html/pw_setting.html" target="iframe_a">pw_setting.html</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td></td>
+					<td>비밀번호 설정 완료 (팝업)</td>
+					<td><a href="html/pw_setting_pop_01.html" target="iframe_a">pw_setting_pop_01.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 02 -->
+		<!-- S.menu 03 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>계좌등록</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7</td>
+					<td>휴대전화 인증</td>
+					<td></td>
+					<td><a href="html/account_certify.html" target="iframe_a">account_certify.html</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>휴대전화 인증 (팝업)</td>
+					<td></td>
+					<td><a href="html/account_certify_pop_01.html" target="iframe_a">account_certify_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td></td>
+					<td>승인번호 입력</td>
+					<td><a href="html/account_certify_num.html" target="iframe_a">account_certify_num.html</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td></td>
+					<td>본인 인증 완료 (팝업)</td>
+					<td><a href="html/account_certify_done_pop.html" target="iframe_a">account_certify_done_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td></td>
+					<td>계좌 등록</td>
+					<td><a href="html/account_regist.html" target="iframe_a">account_regist.html</a></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td></td>
+					<td>계좌 등록 (팝업)</td>
+					<td><a href="html/account_regist_pop_01.html" target="iframe_a">account_regist_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td></td>
+					<td>계좌 등록 완료</td>
+					<td><a href="html/account_regist_done.html" target="iframe_a">account_regist_done.html</a></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td></td>
+					<td>계좌 등록 실패 (팝업)</td>
+					<td><a href="html/account_regist_fail_pop.html" target="iframe_a">account_regist_fail_pop.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 03 -->
+		<!-- S.menu 04 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>충전하기</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>15</td>
+					<td>충전하기</td>
+					<td></td>
+					<td><a href="html/charge_point.html" target="iframe_a">charge_point.html</a></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>충전 성공 (팝업)</td>
+					<td></td>
+					<td><a href="html/charge_point_pop_01.html" target="iframe_a">charge_point_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>충전 실패 (팝업)</td>
+					<td></td>
+					<td><a href="html/charge_point_pop_02.html" target="iframe_a">charge_point_pop_02.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 04 -->
+		<!-- S.menu 05 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>출금하기</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>18</td>
+					<td>출금하기</td>
+					<td></td>
+					<td><a href="html/withdraw.html" target="iframe_a">withdraw.html</a></td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>출금하기 완료</td>
+					<td></td>
+					<td><a href="html/withdraw_done.html" target="iframe_a">withdraw_done.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 05 -->
+		<!-- S.menu 06 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>이용내역</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>20</td>
+					<td>결제내역</td>
+					<td></td>
+					<td><a href="html/usage_history_01.html" target="iframe_a">usage_history_01.html</a></td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>충전내역</td>
+					<td></td>
+					<td><a href="html/usage_history_02.html" target="iframe_a">usage_history_02.html</a></td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>출금내역</td>
+					<td></td>
+					<td><a href="html/usage_history_03.html" target="iframe_a">usage_history_03.html</a></td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>전환내역</td>
+					<td></td>
+					<td><a href="html/usage_history_04.html" target="iframe_a">usage_history_04.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 06 -->
+		<!-- S.menu 07 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>선물하기</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>24</td>
+					<td>선물하기 약관</td>
+					<td></td>
+					<td><a href="html/gift_terms.html" target="iframe_a">gift_terms.html</a></td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>선물하기</td>
+					<td></td>
+					<td><a href="html/gift_points.html" target="iframe_a">gift_points.html</a></td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td>선물하기 확인(팝업)</td>
+					<td></td>
+					<td><a href="html/gift_points_pop_01.html" target="iframe_a">gift_points_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td></td>
+					<td>선물하기 완료</td>
+					<td><a href="html/gift_points_done.html" target="iframe_a">gift_points_done.html</a></td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td></td>
+					<td>보낸선물</td>
+					<td><a href="html/gift_sent.html" target="iframe_a">gift_sent.html</a></td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td></td>
+					<td>받은선물</td>
+					<td><a href="html/gift_received.html" target="iframe_a">gift_received.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 07 -->
+		<!-- S.menu 08 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>고객센터</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>30</td>
+					<td>FAQ</td>
+					<td></td>
+					<td><a href="html/cs_faq.html" target="iframe_a">cs_faq.html</a></td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td>문의하기</td>
+					<td></td>
+					<td><a href="html/cs_contact.html" target="iframe_a">cs_contact.html</a></td>
+				</tr>
+				<tr>
+					<td>32</td>
+					<td></td>
+					<td>상담 내용 선택 (팝업)</td>
+					<td><a href="html/cs_contact_pop_01.html" target="iframe_a">cs_contact_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td></td>
+					<td>문의 진행 확인 (팝업)</td>
+					<td><a href="html/cs_contact_pop_02.html" target="iframe_a">cs_contact_pop_02.html</a></td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td></td>
+					<td>접수 완료 (팝업)</td>
+					<td><a href="html/cs_contact_pop_03.html" target="iframe_a">cs_contact_pop_03.html</a></td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td></td>
+					<td>문의 내역</td>
+					<td><a href="html/cs_contact_history.html" target="iframe_a">cs_contact_history.html</a></td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td>전화문의</td>
+					<td></td>
+					<td><a href="html/cs_call.html" target="iframe_a">cs_call.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 08 -->
+		<!-- S.menu 09 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>결제 비밀번호 변경</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>37</td>
+					<td>결제 비밀번호 변경</td>
+					<td></td>
+					<td><a href="html/pw_change.html" target="iframe_a">pw_change.html</a></td>
+				</tr>
+				<tr>
+					<td>38</td>
+					<td></td>
+					<td>휴대전화 인증</td>
+					<td><a href="html/pw_change_certify.html" target="iframe_a">pw_change_certify.html</a></td>
+				</tr>
+				<tr>
+					<td>39</td>
+					<td></td>
+					<td>통신사 선택 (팝업)</td>
+					<td><a href="html/pw_change_pop_01.html" target="iframe_a">pw_change_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>40</td>
+					<td></td>
+					<td>결제 비밀번호 변경하기</td>
+					<td><a href="html/pw_change_set.html" target="iframe_a">pw_change_set.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 09 -->
+		<!-- S.menu 10 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>이용가이드</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>41</td>
+					<td>이용가이드</td>
+					<td></td>
+					<td><a href="html/user_guide_list.html" target="iframe_a">user_guide_list.html</a></td>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td></td>
+					<td>이용가이드 상세</td>
+					<td><a href="html/user_guide_detail.html" target="iframe_a">user_guide_detail.html</a></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<!-- E.menu 10 -->
+		<!-- S.menu 11 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>쇼핑하기</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>43</td>
+					<td>쇼핑하기</td>
+					<td></td>
+					<td><a href="html/shopping_giftcard.html" target="iframe_a">shopping_giftcard.html</a></td>
+				</tr>
+				<tr>
+					<td>44</td>
+					<td></td>
+					<td>쇼핑하기 상세</td>
+					<td><a href="html/shopping_giftcard_detail.html" target="iframe_a">shopping_giftcard_detail.html</a></td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td></td>
+					<td>금액선택 (팝업)</td>
+					<td><a href="html/shopping_giftcard_detail_pop.html" target="iframe_a">shopping_giftcard_detail_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>46</td>
+					<td></td>
+					<td>보관함</td>
+					<td><a href="html/shopping_giftcard_mylist.html" target="iframe_a">shopping_giftcard_mylist.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 11 -->
+		<!-- S.menu 12 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>공지사항</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>47</td>
+					<td>공지사항</td>
+					<td></td>
+					<td><a href="html/notice_list.html" target="iframe_a">notice_list.html</a></td>
+				</tr>
+				<tr>
+					<td>48</td>
+					<td></td>
+					<td>공지사항 상세</td>
+					<td><a href="html/notice_detail.html" target="iframe_a">notice_detail.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 12 -->
+		<!-- S.menu 13 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>약관동의</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>49</td>
+					<td>약관/정책</td>
+					<td></td>
+					<td><a href="html/terms_policy.html" target="iframe_a">terms_policy.html</a></td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td></td>
+					<td>서비스 이용약관</td>
+					<td><a href="html/terms_view_01.html" target="iframe_a">terms_view_01.html</a></td>
+				</tr>
+				<tr>
+					<td>51</td>
+					<td></td>
+					<td>이벤트 개인정보 활용/위탁 동의</td>
+					<td><a href="html/terms_view_02.html" target="iframe_a">terms_view_02.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 13 -->
+		<!-- S.menu 14 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>이벤트</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>52</td>
+					<td>이벤트</td>
+					<td></td>
+					<td><a href="html/event_list.html" target="iframe_a">event_list.html</a></td>
+				</tr>
+				<tr>
+					<td>53</td>
+					<td></td>
+					<td>이벤트 상세</td>
+					<td><a href="html/event_detail.html" target="iframe_a">event_detail.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 14 -->
+		<!-- S.menu 15 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>제로포인트 결제</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>54</td>
+					<td>포인트결제</td>
+					<td></td>
+					<td><a href="html/point_pay.html" target="iframe_a">page_error.html</a></td>
+				</tr>
+				<tr>
+					<td>55</td>
+					<td></td>
+					<td>사용가능매장</td>
+					<td><a href="html/point_pay_store.html" target="iframe_a">point_pay_store.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 15 -->
+	</div>
+</div>
+</body>
+</html>
