@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../common/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/style_admin.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header id="gnb">
+        <div class="gnb_innerWrap">
+            <h1 class="logo"><a href="../admin/01_admin_mng.html">ZeroPay 선불포인트 관리자</a></h1>
+            <div class="admin_info">
+                <div class="name">홍길동 님 안녕하세요</div>
+                <a class="logout roundBtn" href="javascript:void(0);">로그아웃</a>
+            </div>
+        </div>
+        <!--S .gnbMenu-->
+        <div class="gnbMenu">
+            <div class="container">
+                <ul class="depth1 clearfix">
+                    <li><a href="javascript:void(0);">회원 관리</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../mem/01_member_search.html">회원조회</a></li>
+                                <li><a href="../mem/02_member_list.html">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">통계</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../stt/01_charge_list.html">충전관리</a></li>
+                                <li><a href="../stt/02_payment_list.html">결제관리</a></li>
+                                <li><a href="../stt/03_withdraw_list.html">출금관리</a></li>           <li><a href="../stt/04_accum_list.html">대량적립</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">게시판 관리</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../bom/01_contact_list.html">1:1 상담</a></li>
+                                <li><a href="../bom/02_notice_list.html">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../evm/01_event_list.html">이벤트 관리</a></li>
+                    <li class="on"><a href="javascript:void(0);">일마감</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li class="on"><a href="../dbd/01_setcom_list.html">정산업체관리</a></li>
+                                <li><a href="../dbd/02_charge_list.html">일마감(충전)</a></li>
+                                <li><a href="../dbd/03_payment_list.html">일마감(결제)</a></li>
+                                <li><a href="../dbd/04_withdraw_list.html">일마감(출금)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--E .gnbMenu-->
+    </header>
+    <!--S .contents-->
+    <div class="contents container">
+        <div class="titleWrap">
+            <h2 class="ct_tt">정산업체관리</h2>
+        </div>
+        <table class="table1 type1">
+        	<caption class="caption">
+        		업체정보
+        	</caption>
+        	<colgroup>
+        		<col style="width:16%;" />
+        		<col style="width:84%;" />
+        	</colgroup>
+            <tbody>
+                <tr>
+                    <th>업체명</th>
+                    <td>다날</td>
+                </tr>
+                <tr>
+                    <th>사업자 등록번호</th>
+                    <td>125-25-84521</td>
+                </tr>
+                <tr>
+                    <th>대표자명</th>
+                    <td>이다날</td>
+                </tr>
+                <tr>
+                    <th>사업자등록증</th>
+                    <td>
+                    	<div class="filebox">
+							<input class="input upload_name" placeholder=""><label class="upload_btn" for="input_file1">파일 선택</label>
+							<input type="file" id="input_file1" class="upload_hidden">
+							<span class="btn_del"></span>
+						</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table1 type1">
+        	<caption class="caption">
+        		계약정보
+        	</caption>
+        	<colgroup>
+        		<col style="width:16%;" />
+        		<col style="width:84%;" />
+        	</colgroup>
+            <tbody>
+                <tr>
+                    <th>계약상태</th>
+                    <td>정상</td>
+                </tr>
+                <tr>
+                    <th>계약(갱신)일자</th>
+                    <td>2018.01.13</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">관련문서</th>
+                    <td>
+                    	<div class="filebox">
+							<input class="input upload_name" placeholder=""><label class="upload_btn" for="input_file1">파일 선택</label>
+							<input type="file" id="input_file1" class="upload_hidden">
+							<span class="btn_del"></span>
+						</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    	<div class="filebox">
+							<input class="input upload_name" placeholder=""><label class="upload_btn" for="input_file1">파일 선택</label>
+							<input type="file" id="input_file1" class="upload_hidden">
+							<span class="btn_del"></span>
+						</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>결제수단</th>
+                    <td>휴대폰소액결제</td>
+                </tr>
+                <tr>
+                    <th>담당자</th>
+                    <td>김다날</td>
+                </tr>
+                <tr>
+                    <th>매입 수수료</th>
+                    <td>4.2%&nbsp;&nbsp;<a class="roundBtn" href="01_setcom_detail_pop.html">변경이력 보기</a></td>
+                </tr>
+                <tr>
+                    <th>수수료 적용일(예약적용일)</th>
+                    <td>2019년 03월 04일 23시 59분 59초<em class="dv">|</em><span class="red">2019년 04월 01일 00시 00분 00초</span></td>
+                </tr>
+                <tr>
+                    <th>매출 수수료</th>
+                    <td>4.2%&nbsp;&nbsp;<a class="roundBtn" href="01_setcom_detail_pop.html">변경이력 보기</a></td>
+                </tr>
+                <tr>
+                    <th>수수료 적용일(예약적용일)</th>
+                    <td>2019년 03월 04일 23시 59분 59초<em class="dv">|</em><span class="red">2019년 04월 01일 00시 00분 00초</span></td>
+                </tr>
+                <tr>
+                    <th>거래처 담당자</th>
+                    <td>김다날</td>
+                </tr>
+                <tr>
+                    <th>거래처 전화번호</th>
+                    <td>010-4646-4646</td>
+                </tr>
+                <tr>
+                    <th>거래처 Web site</th>
+                    <td>http://www.danal.com</td>
+                </tr>
+                <tr>
+                    <th>정산주기</th>
+                    <td>D+3일</td>
+                </tr>
+                <tr>
+                    <th>정산담당자</th>
+                    <td>저세상</td>
+                </tr>
+                <tr>
+                    <th>정산 담당자 연락처</th>
+                    <td>010-3939-3039</td>
+                </tr>
+                <tr>
+                    <th>정산 담당자 이메일</th>
+                    <td>wjtptkd@naver.com</td>
+                </tr>
+                <tr>
+                    <th>세금계산서 담당자</th>
+                    <td>이세상</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="tb_button">
+        	<a class="contentsBtn typeA" href="javascript:void(0);">수정</a>
+        	<a class="contentsBtn" href="javascript:void(0);">목록</a>
+        </div>
+        <hr class="hr"/>
+        <div class="add_area">
+       		<a class="roundBtn medium" href="javascript:void(0);">등록 / 수정화면</a>
+       	</div>
+        <table class="table1 type1">
+        	<colgroup>
+        		<col style="width:16%;" />
+        		<col style="width:84%;" />
+        	</colgroup>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <td>
+                    	교통카드 충전결제
+                    </td>
+                </tr>
+                <tr>
+                    <th>담당자</th>
+                    <td>
+                    	<input class="input" type="text" value="김다날" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>매입 수수료 구분</th>
+                    <td>
+                    	<input id="pType1" class="chk_radio sm" type="radio" name="pType"><label for="pType1">정률</label>
+                    	<input id="pType2" class="chk_radio sm" type="radio" name="pType"><label for="pType2">정액</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>매입 수수료</th>
+                    <td>
+                    	3.0%(원)
+                    </td>
+                </tr>
+                <tr>
+                    <th>매입 수수료 적용일</th>
+                    <td>
+                    	<input id="apType_p1" class="chk_radio sm" type="radio" name="apType_p"><label for="apType_p1">즉시</label>
+                    	<input id="apType_p2" class="chk_radio sm" type="radio" name="apType_p"><label for="apType_p2">예약</label>
+                    	<div class="dateset">
+                    		<input class="input" type="text"><em>년</em>
+                    		<input class="input" type="text"><em>월</em>
+                    		<input class="input" type="text"><em>일</em>
+                    		<input class="input" type="text"><em>시</em>
+                    		<input class="input" type="text"><em>분</em>
+                    		<input class="input" type="text"><em>초</em>
+                    	</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>매출 수수료 구분</th>
+                    <td>
+                    	<input id="sType1" class="chk_radio sm" type="radio" name="sType"><label for="sType1">정률</label>
+                    	<input id="sType2" class="chk_radio sm" type="radio" name="sType"><label for="sType2">정액</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>매출 수수료</th>
+                    <td>
+                    	3.0%(원)
+                    </td>
+                </tr>
+                <tr>
+                    <th>매출 수수료 적용일</th>
+                    <td>
+                    	<input id="apType_s1" class="chk_radio sm" type="radio" name="apType_s"><label for="apType_s1">즉시</label>
+                    	<input id="apType_s2" class="chk_radio sm" type="radio" name="apType_s"><label for="apType_s2">예약</label>
+                    	<div class="dateset">
+                    		<input class="input" type="text"><em>년</em>
+                    		<input class="input" type="text"><em>월</em>
+                    		<input class="input" type="text"><em>일</em>
+                    		<input class="input" type="text"><em>시</em>
+                    		<input class="input" type="text"><em>분</em>
+                    		<input class="input" type="text"><em>초</em>
+                    	</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="tb_button">
+        	<a class="contentsBtn typeA" href="javascript:void(0);">취소</a>
+        	<a class="contentsBtn" href="javascript:void(0);">저장</a>
+        </div>
+    </div>
+    <!--E .contents-->
+</div>
+<script type='text/javascript'>
+	$('.timepicker1').timepicki({increase_direction:'up'}); 
+</script>
+</body>
+</html>

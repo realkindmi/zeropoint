@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1200, user-scalable=yes">
+	<title></title>
+</head>
+<style>
+	* {border:none; margin:0; padding:0; box-sizing:border-box;}
+	body {height:100%; font-size:13px;}
+	a {display:inline-block; text-decoration:none; color:#439aef;}
+	table {width:100%; margin-bottom:40px; border-collapse:collapse; border-spacing:0; border-top:2px solid #888;}
+	caption {padding:10px 15px; margin-bottom:5px; font-size:14px; font-weight:bold; text-align:left; background:#eee;}
+	table tr:hover {background:#ecf5fd;}
+	th, td {padding:8px 20px; text-align:left; border-bottom:1px solid #DDD;}
+	thead th {background:#F7F7F7;}
+	tbody th, tbody td {font-size:12px;}
+	tbody td:first-child {text-align:center;}
+	
+	#wrap {position:relative; width:100%; min-width:1024px; height:100%; min-height:100%;}
+	#header {position:fixed; left:0; right:0; top:0; width:100%; min-width:1024px; height:80px; z-index:100; box-shadow:0 1px 0px 0px rgba(26, 26, 26, 0.1); background:#3B4094;}
+	#header .hd_name {position:absolute; left:30px; top:50%; margin-top:-10px; vertical-align:bottom;}
+	#header .hd_name .logo {display:inline-block; width:277px; height:21px; margin-right:8px; background:url("common/images/title_logo_w.svg") no-repeat; background-size:contain; text-indent:-9999px;}
+	#header .hd_name span {color:#fff;}
+	
+	.menu {padding:120px 20px 0 20px;}
+
+</style>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="hd_name"><h1 class="logo">제로페이 선불포인트</h1></div>
+	</div>
+	
+	<div class="menu">
+		<!-- S.menu 00 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>공통</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>로그인</td>
+					<td></td>
+					<td><a href="admin/00_login.html" target="_blank">admin/00_login.html</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>승인비밀번호 설정</td>
+					<td></td>
+					<td><a href="admin/00_pw_setting.html" target="_blank">admin/00_pw_setting.html</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>관리자 관리</td>
+					<td></td>
+					<td><a href="admin/01_admin_mng.html" target="_blank">admin/01_admin_mng.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 00 -->
+		<!-- S.menu 01 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>회원관리</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>4</td>
+					<td>회원조회</td>
+					<td></td>
+					<td><a href="mem/01_member_search.html" target="_blank">mem/01_member_search.html</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>조회 결과 없음</td>
+					<td></td>
+					<td><a href="mem/01_member_search_no.html" target="_blank">mem/01_member_search_no.html</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>회원관리</td>
+					<td></td>
+					<td><a href="mem/02_member_list.html" target="_blank">mem/02_member_list.html</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td></td>
+					<td>회원관리 상세1</td>
+					<td><a href="mem/02_member_detail_01.html" target="_blank">mem/02_member_detail_01.html</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td></td>
+					<td>회원관리 상세2</td>
+					<td><a href="mem/02_member_detail_02.html" target="_blank">mem/02_member_detail_02.html</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td></td>
+					<td>회원관리 상세 팝업1</td>
+					<td><a href="mem/02_member_detail_pop_01.html" target="_blank">mem/02_member_detail_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td></td>
+					<td>회원관리 상세 팝업2</td>
+					<td><a href="mem/02_member_detail_pop_02.html" target="_blank">mem/02_member_detail_pop_02.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 01 -->
+		<!-- S.menu 02 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>통계</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>11</td>
+					<td>충전관리</td>
+					<td></td>
+					<td><a href="stt/01_charge_list.html" target="_blank">stt/01_charge_list.html</a></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td></td>
+					<td>충전관리 상세</td>
+					<td><a href="stt/01_charge_detail.html" target="_blank">stt/01_charge_detail.html</a></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td></td>
+					<td>충전관리 상세 팝업</td>
+					<td><a href="stt/01_charge_detail_pop.html" target="_blank">stt/01_charge_detail_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>결제관리</td>
+					<td></td>
+					<td><a href="stt/02_payment_list.html" target="_blank">stt/02_payment_list.html</a></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td></td>
+					<td>결제관리 상세</td>
+					<td><a href="stt/02_payment_detail.html" target="_blank">stt/02_payment_detail.html</a></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td></td>
+					<td>결제관리 상세 팝업</td>
+					<td><a href="stt/02_payment_detail_pop.html" target="_blank">stt/02_payment_detail_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>출금관리</td>
+					<td></td>
+					<td><a href="stt/03_withdraw_list.html" target="_blank">stt/03_withdraw_list.html</a></td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td></td>
+					<td>출금관리 상세</td>
+					<td><a href="stt/03_withdraw_detail.html" target="_blank">stt/03_withdraw_detail.html</a></td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td></td>
+					<td>출금관리 상세 팝업</td>
+					<td><a href="stt/03_withdraw_detail_pop.html" target="_blank">stt/03_withdraw_detail_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td></td>
+					<td>대량적립</td>
+					<td><a href="stt/04_accum_list.html" target="_blank">stt/04_accum_list.html</a></td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td></td>
+					<td>대량적립 상세</td>
+					<td><a href="stt/04_accum_list.html" target="_blank">stt/04_accum_list.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 02 -->
+		<!-- S.menu 03 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>게시판 관리</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>22</td>
+					<td>1:1 상담</td>
+					<td></td>
+					<td><a href="bom/01_contact_list.html" target="_blank">bom/01_contact_list.html</a></td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>1:1 상담 팝업</td>
+					<td></td>
+					<td><a href="bom/01_contact_list_pop.html" target="_blank">bom/01_contact_list_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>공지사항</td>
+					<td></td>
+					<td><a href="bom/02_notice_list.html" target="_blank">bom/02_notice_list.html</a></td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td></td>
+					<td>공지사항 신규</td>
+					<td><a href="bom/02_notice_wirte_pop.html" target="_blank">bom/02_notice_wirte_pop.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 03 -->
+		<!-- S.menu 04 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>이벤트 관리</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>26</td>
+					<td>이벤트 관리</td>
+					<td></td>
+					<td><a href="evm/01_event_list.html" target="_blank">evm/01_event_list.html</a></td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td></td>
+					<td>이벤트 상세</td>
+					<td><a href="evm/01_event_view.html" target="_blank">evm/01_event_view.html</a></td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td></td>
+					<td>이벤트 상세 팝업</td>
+					<td><a href="evm/01_event_view_pop.html" target="_blank">evm/01_event_view_pop.html</a></td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td></td>
+					<td>이벤트 신규</td>
+					<td><a href="evm/01_event_write.html" target="_blank">evm/01_event_write.html</a></td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td></td>
+					<td>이벤트 신규 팝업1</td>
+					<td><a href="evm/01_event_write_pop_01.html" target="_blank">evm/01_event_write_pop_01.html</a></td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td></td>
+					<td>이벤트 신규 팝업2</td>
+					<td><a href="evm/01_event_write_pop_02.html" target="_blank">evm/01_event_write_pop_02.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 04 -->
+		<!-- S.menu 05 -->
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:22%;"/>
+				<col style="width:23%;"/>
+				<col style="width:50%;"/>
+			</colgroup>
+			<caption>일마감</caption>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>32</td>
+					<td>정산업체관리</td>
+					<td></td>
+					<td><a href="dbd/01_setcom_list.html" target="_blank">dbd/01_setcom_list.html</a></td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td></td>
+					<td>정산업체관리 상세</td>
+					<td><a href="dbd/01_setcom_detail.html" target="_blank">dbd/01_setcom_detail.html</a></td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td>일마감(충전)</td>
+					<td></td>
+					<td><a href="dbd/02_charge_list.html" target="_blank">dbd/02_charge_list.html</a></td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td>일마감(결제)</td>
+					<td></td>
+					<td><a href="dbd/03_payment_list.html" target="_blank">dbd/03_payment_list.html</a></td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td>일마감(출금)</td>
+					<td></td>
+					<td><a href="dbd/04_withdraw_list.html" target="_blank">dbd/04_withdraw_list.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu 05 -->
+	</div>
+</div>
+</body>
+</html>

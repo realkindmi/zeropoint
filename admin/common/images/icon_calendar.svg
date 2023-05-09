@@ -1,0 +1,10 @@
+<svg id="icon_calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_143" data-name="사각형 143" width="24" height="24" fill="#3b4094"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_21" data-name="그룹 21" clip-path="url(#clip-path)">
+    <path id="패스_341" data-name="패스 341" d="M20,20H16V16h4ZM14,10H10v4h4Zm6,0H16v4h4ZM8,16H4v4H8Zm6,0H10v4h4ZM8,10H4v4H8ZM24,2V24H0V2H3V3A2,2,0,0,0,7,3V2H17V3a2,2,0,0,0,4,0V2ZM22,8H2V22H22ZM20,1a1,1,0,0,0-2,0V3a1,1,0,0,0,2,0ZM6,3A1,1,0,0,1,4,3V1A1,1,0,0,1,6,1Z" fill="#3b4094"/>
+  </g>
+</svg>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../common/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/style_admin.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header id="gnb">
+        <div class="gnb_innerWrap">
+            <h1 class="logo"><a href="../admin/01_admin_mng.html">ZeroPay 선불포인트 관리자</a></h1>
+            <div class="admin_info">
+                <div class="name">홍길동 님 안녕하세요</div>
+                <a class="logout roundBtn" href="javascript:void(0);">로그아웃</a>
+            </div>
+        </div>
+        <!--S .gnbMenu-->
+        <div class="gnbMenu">
+            <div class="container">
+                <ul class="depth1 clearfix">
+                    <li><a href="javascript:void(0);">회원 관리</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../mem/01_member_search.html">회원조회</a></li>
+                                <li><a href="../mem/02_member_list.html">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">통계</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../stt/01_charge_list.html">충전관리</a></li>
+                                <li><a href="../stt/02_payment_list.html">결제관리</a></li>
+                                <li><a href="../stt/03_withdraw_list.html">출금관리</a></li>           <li><a href="../stt/04_accum_list.html">대량적립</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">게시판 관리</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../bom/01_contact_list.html">1:1 상담</a></li>
+                                <li><a href="../bom/02_notice_list.html">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="on"><a href="../evm/01_event_list.html">이벤트 관리</a></li>
+                    <li><a href="javascript:void(0);">일마감</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../dbd/01_setcom_list.html">정산업체관리</a></li>
+                                <li><a href="../dbd/02_charge_list.html">일마감(충전)</a></li>
+                                <li><a href="../dbd/03_payment_list.html">일마감(결제)</a></li>
+                                <li><a href="../dbd/04_withdraw_list.html">일마감(출금)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--E .gnbMenu-->
+    </header>
+    <!--S .contents-->
+    <div class="contents container">
+        <div class="titleWrap">
+            <h2 class="ct_tt">이벤트 관리</h2>
+        </div>
+        <table class="table1 type1">
+        	<colgroup>
+        		<col style="width:16%;" />
+        		<col style="width:34%;" />
+        		<col style="width:16%;" />
+        		<col style="width:34%;" />
+        	</colgroup>
+            <tbody>
+                <tr>
+                    <th>프로모션 명</th>
+                    <td colspan="3">
+                    	<input class="input" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>소제목</th>
+                    <td colspan="3">
+                    	<input class="input" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>프로모션 설명</th>
+                    <td colspan="3">
+                    	<input class="input" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>제휴업체</th>
+                    <td>
+                    	<input class="input" type="text">
+                    </td>
+                    <th>속성</th>
+                    <td>
+                    	<select class="select_box">
+                    		<option value="">추천</option>
+                    	</select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>등록일</th>
+                    <td colspan="3">
+                    	<input class="input" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이벤트 진행기간</th>
+                    <td colspan="3">
+                    	<div class="search_period">
+                    		<link href="../common/css/timepicki.css" rel="stylesheet">
+							<script src="../common/js/datepicker.js"></script>
+							<script src="../common/js/timepicki.js"></script>
+							
+							<div class="search_date">
+								<input class="input startDate" type="text" readonly>
+							</div>
+							<input class="timepicker1 input" type="text" />
+							<em>~</em>
+							<div class="search_date">
+								<input class="input endDate" type="text" readonly>
+							</div>
+							<input class="timepicker1 input" type="text" />
+						</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>썸네일</th>
+                    <td colspan="3">
+                    	<div class="filebox">
+							<input class="input upload_name" placeholder=""><label class="upload_btn" for="input_file1">파일 선택</label>
+							<input type="file" id="input_file1" class="upload_hidden">
+							<span class="btn_del"></span>
+						</div>
+                    	<p>- 크기 가로 000 * 세로 000</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>경로</th>
+                    <td colspan="3">
+                    	<ul class="url_list">
+                    		<li>
+                    			<input id="inMenu" class="chk_radio sm" type="radio" name="chk_route"><label for="inMenu">내부 메뉴</label>
+                    			<select class="select_box">
+                    				<option value="">조르기 메인</option>
+                    			</select>
+                    		</li>
+                    		<li>
+                    			<input id="inURL" class="chk_radio sm" type="radio" name="chk_route"><label for="inURL">내부 URL (브릿지 페이지 생성)</label>
+                    			<div class="filebox">
+									<input class="input upload_name" placeholder=""><label class="upload_btn" for="input_file1">파일 선택</label>
+									<input type="file" id="input_file1" class="upload_hidden">
+									<span class="btn_del"></span>
+								</div>
+                    		</li>
+                    		<li>
+                    			<input id="outURL" class="chk_radio sm" type="radio" name="chk_route"><label for="outURL">외부 URL</label>
+                    			<div class="outURL">
+                    				<input class="input" type="text">
+                    			</div>
+                    		</li>
+                    	</ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button_area">
+        	<a class="contentsBtn" href="javascript:void(0);">등록</a>
+        	<a class="contentsBtn typeA" href="javascript:void(0);">닫기</a>
+        </div>
+    </div>
+    <!--E .contents-->
+</div>
+<script type='text/javascript'>
+	$('.timepicker1').timepicki({increase_direction:'up'}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../common/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/style_admin.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+ 	<header id="gnb">
+        <div class="gnb_innerWrap">
+            <h1 class="logo"><a href="../admin/01_admin_mng.html">ZeroPay 선불포인트 관리자</a></h1>
+            <div class="admin_info">
+                <div class="name">홍길동 님 안녕하세요</div>
+                <a class="logout roundBtn" href="javascript:void(0);">로그아웃</a>
+            </div>
+        </div>
+        <!--S .gnbMenu-->
+        <div class="gnbMenu">
+            <div class="container">
+                <ul class="depth1 clearfix">
+                    <li class="on"><a href="javascript:void(0);">회원 관리</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../mem/01_member_search.html">회원조회</a></li>
+                                <li class="on"><a href="../mem/02_member_list.html">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">통계</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../stt/01_charge_list.html">충전관리</a></li>
+                                <li><a href="../stt/02_payment_list.html">결제관리</a></li>
+                                <li><a href="../stt/03_withdraw_list.html">출금관리</a></li>           <li><a href="../stt/04_accum_list.html">대량적립</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">게시판 관리</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../bom/01_contact_list.html">1:1 상담</a></li>
+                                <li><a href="../bom/02_notice_list.html">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../evm/01_event_list.html">이벤트 관리</a></li>
+                    <li><a href="javascript:void(0);">일마감</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../dbd/01_setcom_list.html">정산업체관리</a></li>
+                                <li><a href="../dbd/02_charge_list.html">일마감(충전)</a></li>
+                                <li><a href="../dbd/03_payment_list.html">일마감(결제)</a></li>
+                                <li><a href="../dbd/04_withdraw_list.html">일마감(출금)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--E .gnbMenu-->
+    </header>
+    <!--S .contents-->
+    <div class="contents container">
+        <div class="titleWrap">
+            <h2 class="ct_tt">회원관리</h2>
+        </div>
+        <!--S .option_box-->
+        <div class="option_box">
+            <div class="item_row type1">
+                <div class="item_cell">
+                    <div class="cell_tt">ID</div>
+                    <div class="cell_ct">
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div class="item_cell">
+                    <div class="cell_tt">전화번호</div>
+                    <div class="cell_ct">
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div class="item_cell">
+                    <div class="cell_tt">가입일</div>
+                    <div class="cell_ct">
+                        <script src="../common/js/datepicker.js"></script>
+                        <div class="search_date">
+                            <input class="input datepicker" type="text" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item_row type1">
+                <div class="item_cell">
+                    <div class="cell_tt paren">OS Type</div>
+                    <div class="cell_ct">
+                        <select class="select_box">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item_cell">
+                    <div class="cell_tt">회원상태</div>
+                    <div class="cell_ct">
+                        <select class="select_box">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item_cell">
+                    <div class="cell_tt">지역</div>
+                    <div class="cell_ct">
+                        <select class="select_box">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_search contentsBtn" type="button">조&nbsp;회</button>
+        </div>
+        <!--E .option_box-->
+        <div class="tb_top clearfix">
+            <div class="fl">
+           		<span class="total">총 100건</span>
+           	</div>
+            <div class="fr">
+                <a class="roundBtn typeA" href="javascript:void(0);">엑셀 다운로드</a>
+                <select class="select_box">
+                	<option value="">10개씩</option>
+                </select>
+            </div>
+        </div>
+        <div class="table_wrap">
+			<table class="table1">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>ID</th>
+						<th>로그인 Type</th>
+						<th>OS</th>
+						<th>지역</th>
+						<th>상태</th>
+						<th>전화번호</th>
+						<th>가입일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>100</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>티모넷</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>정상</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>99</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>다날</td>
+						<td>IOS</td>
+						<td>서울</td>
+						<td>휴면</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>98</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>한결원</td>
+						<td>Android</td>
+						<td>부산</td>
+						<td>탈퇴</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>97</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>채널사(밀리)</td>
+						<td>Android</td>
+						<td>강원도</td>
+						<td>BL</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>96</td>
+						<td>
+							<a class="link" class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>채널사(밀리)</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>정상</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>95</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>채널사(밀리)</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>정상</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>94</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>채널사(행복)</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>휴면</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>93</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>채널사(행복)</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>탈퇴</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>92</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>다날</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>BL</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+					<tr>
+						<td>91</td>
+						<td>
+							<a class="link" href="02_member_detail_01.html">aaabbbccc@naver.com</a>(밀리)
+						</td>
+						<td>한결원</td>
+						<td>Android</td>
+						<td>충청남도</td>
+						<td>정상</td>
+						<td>01012345678</td>
+						<td>2021.01.03 12:10:13</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+        <div class="nav_wrap">
+       		<ul class="page_nav clearfix">
+				<li class="first btn"><a href="#">&lt;&lt;</a></li>
+				<li class="prev btn"><a href="#">&lt;</a></li>
+				<li class="on"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li class="next btn"><a href="#">&gt;</a></li>
+				<li class="last btn"><a href="#">&gt;&gt;</a></li>
+			</ul>
+        </div>
+    </div>
+    <!--E .contents-->
+</div>
+</body>
+</html>

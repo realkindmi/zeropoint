@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Nanum-Gothic';
+	src: url('../font/NanumGothicRegular.eot');
+	src: local(※),
+		url('../font/NanumGothicRegular.woff') format('woff'),
+		url('../font/NanumGothicRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Nanum-Gothic';
+	src: url('../font/NanumGothicBold.eot');
+	src: local(※),
+		url('../font/NanumGothicBold.woff') format('woff'),
+		url('../font/NanumGothicBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Nanum-Gothic';
+	src: url('../font/NanumGothicExtraBold.eot');
+	src: local(※),
+		url('../font/NanumGothicExtraBold.woff') format('woff'),
+		url('../font/NanumGothicExtraBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../common/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/style_admin.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header id="gnb">
+        <div class="gnb_innerWrap">
+            <h1 class="logo"><a href="../admin/01_admin_mng.html">ZeroPay 선불포인트 관리자</a></h1>
+            <div class="admin_info">
+                <div class="name">홍길동 님 안녕하세요</div>
+                <a class="logout roundBtn" href="javascript:void(0);">로그아웃</a>
+            </div>
+        </div>
+        <!--S .gnbMenu-->
+        <div class="gnbMenu">
+            <div class="container">
+                <ul class="depth1 clearfix">
+                    <li class="on"><a href="javascript:void(0);">회원 관리</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../mem/01_member_search.html">회원조회</a></li>
+                                <li class="on"><a href="../mem/02_member_list.html">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">통계</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../stt/01_charge_list.html">충전관리</a></li>
+                                <li><a href="../stt/02_payment_list.html">결제관리</a></li>
+                                <li><a href="../stt/03_withdraw_list.html">출금관리</a></li>           <li><a href="../stt/04_accum_list.html">대량적립</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">게시판 관리</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../bom/01_contact_list.html">1:1 상담</a></li>
+                                <li><a href="../bom/02_notice_list.html">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../evm/01_event_list.html">이벤트 관리</a></li>
+                    <li><a href="javascript:void(0);">일마감</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../dbd/01_setcom_list.html">정산업체관리</a></li>
+                                <li><a href="../dbd/02_charge_list.html">일마감(충전)</a></li>
+                                <li><a href="../dbd/03_payment_list.html">일마감(결제)</a></li>
+                                <li><a href="../dbd/04_withdraw_list.html">일마감(출금)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--E .gnbMenu-->
+    </header>
+    <!--S .contents-->
+    <div class="contents container">
+        <div class="titleWrap">
+            <h2 class="ct_tt">회원관리</h2>
+        </div>
+        <div class="tab_menu">
+        	<ul class="clearfix">
+        		<li>
+        			<a href="02_member_detail_01.html">기본정보</a>
+        		</li>
+        		<li class="on">
+        			<a href="02_member_detail_02.html">거래내역</a>
+        		</li>
+        	</ul>
+        </div>
+		<table class="table1 type1">
+			<colgroup>
+				<col style="width:16%;" />
+				<col style="width:84%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>전체</th>
+					<td><b>3,200</b> 캐시</td>
+				</tr>
+				<tr>
+					<th>유료</th>
+					<td><b>3,200</b> 캐시</td>
+				</tr>
+				<tr>
+					<th>무료</th>
+					<td><b>0</b> 캐시</td>
+				</tr>
+				<tr>
+					<th>출금가능</th>
+					<td><b>3,200</b> 캐시&nbsp;&nbsp;<a class="roundBtn" href="#">출금하기</a></td>
+				</tr>
+			</tbody>
+		</table>
+       	<!--S .option_box-->
+        <div class="option_box">
+            <div class="item_row type1">
+                <div class="item_cell">
+                    <div class="cell_tt">구분</div>
+                    <div class="cell_ct">
+                        <select class="select_box">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item_cell">
+                    <div class="cell_tt">조회기간</div>
+                    <div class="cell_ct search_period">
+                        <script src="../common/js/datepicker.js"></script>
+                        <div class="search_date">
+                            <input class="input startDate" type="text" readonly>
+                        </div>
+                        <em>~</em>
+                        <div class="search_date">
+                            <input class="input endDate" type="text" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_search contentsBtn" type="button">조&nbsp;회</button>
+        </div>
+        <!--E .option_box-->
+        <div class="tb_top clearfix">
+            <div class="fl">
+           		<span class="total">총 100건</span>
+           	</div>
+            <div class="fr">
+                <a class="roundBtn typeA" href="javascript:void(0);">엑셀 다운로드</a>
+                <select class="select_box">
+                	<option value="">10개씩</option>
+                </select>
+            </div>
+        </div>
+        <div class="table_wrap">
+			<table class="table1">
+				<thead>
+					<tr>
+						<th rowspan="2">날짜/시간</th>
+						<th colspan="2">충전</th>
+						<th rowspan="2">결제</th>
+						<th rowspan="2">출금</th>
+						<th rowspan="2">잔액</th>
+						<th rowspan="2">내용/사유</th>
+					</tr>
+					<tr>
+						<th>유료</th>
+						<th>무료</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt red">9,800</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">3,200</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt">100,000</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">13,000</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt red">700</td>
+						<td class="txt_rt">3,000</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt red">10,000</td>
+						<td class="txt_rt">3,700</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt">1,200</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">13,700</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt">100,000</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">12,500</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">1,500</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">2,500</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">500</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">2,500</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">500</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">2,000</td>
+						<td>문화상품권</td>
+					</tr>
+					<tr>
+						<td>2019.03.15 12:10:13</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">500</td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt"></td>
+						<td class="txt_rt">1,500</td>
+						<td>문화상품권</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+   		<div class="nav_wrap">
+   			<a class="btn_more" href="javascript:void(0);">더보기 ▼</a>
+   		</div>
+    </div>
+    <!--E .contents-->
+</div>
+</body>
+</html>

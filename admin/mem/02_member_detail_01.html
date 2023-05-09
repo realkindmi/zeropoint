@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../common/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/style_admin.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header id="gnb">
+        <div class="gnb_innerWrap">
+            <h1 class="logo"><a href="../admin/01_admin_mng.html">ZeroPay 선불포인트 관리자</a></h1>
+            <div class="admin_info">
+                <div class="name">홍길동 님 안녕하세요</div>
+                <a class="logout roundBtn" href="javascript:void(0);">로그아웃</a>
+            </div>
+        </div>
+        <!--S .gnbMenu-->
+        <div class="gnbMenu">
+            <div class="container">
+                <ul class="depth1 clearfix">
+                    <li class="on"><a href="javascript:void(0);">회원 관리</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../mem/01_member_search.html">회원조회</a></li>
+                                <li class="on"><a href="../mem/02_member_list.html">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">통계</a>
+                        <div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../stt/01_charge_list.html">충전관리</a></li>
+                                <li><a href="../stt/02_payment_list.html">결제관리</a></li>
+                                <li><a href="../stt/03_withdraw_list.html">출금관리</a></li>           <li><a href="../stt/04_accum_list.html">대량적립</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">게시판 관리</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../bom/01_contact_list.html">1:1 상담</a></li>
+                                <li><a href="../bom/02_notice_list.html">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../evm/01_event_list.html">이벤트 관리</a></li>
+                    <li><a href="javascript:void(0);">일마감</a>
+                    	<div class="depth2">
+                            <ul class="clearfix">
+                                <li><a href="../dbd/01_setcom_list.html">정산업체관리</a></li>
+                                <li><a href="../dbd/02_charge_list.html">일마감(충전)</a></li>
+                                <li><a href="../dbd/03_payment_list.html">일마감(결제)</a></li>
+                                <li><a href="../dbd/04_withdraw_list.html">일마감(출금)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--E .gnbMenu-->
+    </header>
+    <!--S .contents-->
+    <div class="contents container">
+        <div class="titleWrap">
+            <h2 class="ct_tt">회원관리</h2>
+        </div>
+        <div class="tab_menu">
+        	<ul class="clearfix">
+        		<li class="on">
+        			<a href="02_member_detail_01.html">기본정보</a>
+        		</li>
+        		<li>
+        			<a href="02_member_detail_02.html">거래내역</a>
+        		</li>
+        	</ul>
+        </div>
+        <table class="table1 type1">
+        	<colgroup>
+        		<col style="width:16%;" />
+        		<col style="width:21%;" />
+        		<col style="width:21%;" />
+        		<col style="width:21%;" />
+        		<col style="width:21%;" />
+        	</colgroup>
+            <tbody>
+                <tr>
+                    <th>ID (E-mail)</th>
+                    <td>
+                    	<a class="link" href="">onet@tmonet.co.kr</a>(지맵)
+                    </td>
+                    <td>
+                    	<a class="link" href="">onet@tmonet.co.kr</a>(지맵)
+                    </td>
+                    <td>
+                    	<a class="link" href="">onet@tmonet.co.kr</a>(지맵)
+                    </td>
+                    <td>
+                    	<a class="link" href="">onet@tmonet.co.kr</a>(지맵)
+                    </td>
+                </tr>
+                <tr>
+                    <th>로그인타입</th>
+                    <td colspan="4">선불포인트캐시</td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td colspan="4">남</td>
+                </tr>
+                <tr>
+                    <th>지역</th>
+                    <td colspan="4">서울</td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td colspan="4">1990.12.31</td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td colspan="4">010-1234-4567</td>
+                </tr>
+                <tr>
+                    <th>가입/탈퇴일</th>
+                    <td colspan="4">2019. 04. 01 12:03:31 / <span class="red">2019. 04. 01 12:03:31</span></td>
+                </tr>
+                <tr>
+                    <th>가입사이트</th>
+                    <td colspan="4"><span class="red">지맵(net@gmail.com)</span></td>
+                </tr>
+                <tr>
+                    <th>최근접속일</th>
+                    <td colspan="4">2019.04.01 12:00:20</td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td colspan="4">onet@tmonet.co.kr</td>
+                </tr>
+                <tr>
+                    <th>회원 상태</th>
+                    <td colspan="4">정상</td>
+                </tr>
+                <tr>
+                    <th>OS Type</th>
+                    <td colspan="4">Android</td>
+                </tr>
+                <tr>
+                    <th>휴대폰 모델명</th>
+                    <td colspan="4">Samsung Galaxy S9 (SM-960)</td>
+                </tr>
+                <tr>
+                    <th>단말버전</th>
+                    <td colspan="4">7.0.1</td>
+                </tr>
+                <tr>
+                    <th>선불포인트캐시 잔액</th>
+                    <td colspan="4">
+                    	<a class="link fsb" href="#">3,200</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>관리자 기록</th>
+                    <td colspan="4">
+                    	<a class="roundBtn" href="#">상세 보기</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--E .contents-->
+</div>
+</body>
+</html>
